@@ -7,11 +7,21 @@ import { createPageUrl } from "@/utils";
 export default function HeroSection() {
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - Desktop */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center hidden md:block"
         style={{
-          backgroundImage: "url('https://i.imgur.com/LVMZcju.png')",
+          backgroundImage: "url('https://i.imgur.com/aWIcBa5.jpeg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
+      </div>
+      
+      {/* Background Image - Mobile */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center block md:hidden"
+        style={{
+          backgroundImage: "url('https://i.imgur.com/7yHNm12.jpeg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
