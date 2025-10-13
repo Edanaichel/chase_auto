@@ -19,9 +19,11 @@ export default function HeroSection() {
       
       {/* Background Image - Mobile */}
       <div 
-        className="absolute inset-0 bg-cover bg-center block md:hidden"
+        className="absolute inset-0 bg-center block md:hidden"
         style={{
           backgroundImage: "url('https://i.imgur.com/7yHNm12.jpeg')",
+          backgroundSize: "70%",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
