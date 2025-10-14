@@ -19,11 +19,10 @@ export default function HeroSection() {
       
       {/* Background Image - Mobile */}
       <div 
-        className="absolute inset-0 block md:hidden"
+        className="absolute inset-0 bg-center block md:hidden"
         style={{
           backgroundImage: "url('https://i.imgur.com/7yHNm12.jpeg')",
-          backgroundSize: "120%",
-          backgroundPosition: "30% center",
+          backgroundSize: "70%",
           backgroundRepeat: "no-repeat",
         }}
       >
