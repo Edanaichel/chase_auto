@@ -60,18 +60,25 @@ function PagesContent() {
                 
                 
                 <Route path="/Home" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 
                 <Route path="/InsuranceClaimAssistance" element={<InsuranceClaimAssistance />} />
+                <Route path="/insuranceclaimassistance" element={<InsuranceClaimAssistance />} />
                 
                 <Route path="/CollisionRepairDetail" element={<CollisionRepairDetail />} />
+                <Route path="/collisionrepairdetail" element={<CollisionRepairDetail />} />
                 
                 <Route path="/AutoPaintRepair" element={<AutoPaintRepair />} />
+                <Route path="/autopaintrepair" element={<AutoPaintRepair />} />
                 
                 <Route path="/AutoFrameStraightening" element={<AutoFrameStraightening />} />
+                <Route path="/autoframestraightening" element={<AutoFrameStraightening />} />
                 
                 <Route path="/Contact" element={<Contact />} />
+                <Route path="/contact" element={<Contact />} />
                 
                 <Route path="/BookAppointment" element={<BookAppointment />} />
+                <Route path="/bookappointment" element={<BookAppointment />} />
                 
             </Routes>
         </Layout>
