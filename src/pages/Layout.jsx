@@ -402,8 +402,9 @@ export default function Layout({ children, currentPageName }) {
             </div>
           </div>
           <div className="gradient-line my-8"></div>
-          <div className="text-center text-sm text-gray-500">
-            <p>&copy; 2024 Chase Auto Body - North Hills. <a href="https://sites.google.com/view/chaseautobodynorthhillsprivacy/home" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--chrome-silver)] transition-colors duration-300">All rights reserved.</a></p>
+          <div className="text-center text-sm text-gray-500 space-y-1">
+            <p>&copy; 2024 Chase Auto Body - North Hills. All rights reserved.</p>
+            <p><a href="https://sites.google.com/view/chaseautobodynorthhillsprivacy/home" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--chrome-silver)] transition-colors duration-300">Privacy Policy</a></p>
           </div>
         </div>
       </footer>
