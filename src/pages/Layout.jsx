@@ -35,6 +35,7 @@ export default function Layout({ children, currentPageName }) {
         { name: "Insurance Claim Assistance", url: createPageUrl("InsuranceClaimAssistance") },
         { name: "Collision Repair", url: createPageUrl("CollisionRepairDetail") },
         { name: "Frame Straightening", url: createPageUrl("AutoFrameStraightening") },
+        { name: "Brake and Lights", url: createPageUrl("BrakeAndLightsInspection") },
         { name: "Paint Repair", url: createPageUrl("AutoPaintRepair") },
       ],
     },

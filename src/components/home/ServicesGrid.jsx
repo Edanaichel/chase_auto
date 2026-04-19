@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Shield, Wrench, Ruler, Paintbrush, ArrowRight, Sparkles } from "lucide-react";
+import { Shield, Wrench, Ruler, Paintbrush, ArrowRight, Sparkles, BadgeCheck } from "lucide-react";
 
 const services = [
   {
@@ -31,6 +31,15 @@ const services = [
     gradient: "from-purple-500/20 via-purple-600/20 to-pink-500/20",
     image: "https://i.imgur.com/uEVd7xh.png",
     features: ["Laser accuracy", "Safety certified", "All vehicle types"],
+  },
+  {
+    icon: BadgeCheck,
+    title: "Brake and Lights",
+    description: "Certified brake and lamp inspections with clear documentation and a streamlined process.",
+    url: createPageUrl("BrakeAndLightsInspection"),
+    gradient: "from-amber-500/20 via-yellow-500/20 to-lime-500/20",
+    image: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2070&auto=format&fit=crop",
+    features: ["Certified inspections", "Clear documentation", "Safety focused"],
   },
   {
     icon: Paintbrush,

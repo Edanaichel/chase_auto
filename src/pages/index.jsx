@@ -10,6 +10,8 @@ import AutoPaintRepair from "./AutoPaintRepair";
 
 import AutoFrameStraightening from "./AutoFrameStraightening";
 
+import BrakeAndLightsInspection from "./BrakeAndLightsInspection";
+
 import Contact from "./Contact";
 
 import BookAppointment from "./BookAppointment";
@@ -27,6 +29,8 @@ const PAGES = {
     AutoPaintRepair: AutoPaintRepair,
     
     AutoFrameStraightening: AutoFrameStraightening,
+
+    BrakeAndLightsInspection: BrakeAndLightsInspection,
     
     Contact: Contact,
     
@@ -73,6 +77,9 @@ function PagesContent() {
                 
                 <Route path="/AutoFrameStraightening" element={<AutoFrameStraightening />} />
                 <Route path="/autoframestraightening" element={<AutoFrameStraightening />} />
+
+                <Route path="/BrakeAndLightsInspection" element={<BrakeAndLightsInspection />} />
+                <Route path="/brakeandlightsinspection" element={<BrakeAndLightsInspection />} />
                 
                 <Route path="/Contact" element={<Contact />} />
                 <Route path="/contact" element={<Contact />} />
