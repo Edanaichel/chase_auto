@@ -124,7 +124,7 @@ export default function BrakeAndLightsInspection() {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?q=80&w=1974&auto=format&fit=crop"
+                src="/images/brake-and-lights-side.png"
                 alt="Brake inspection in progress"
                 className="rounded-2xl shadow-2xl border border-white/10"
               />

@@ -15,6 +15,7 @@ import {
 export default function Layout({ children, currentPageName }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showBrakeLightNotice, setShowBrakeLightNotice] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
@@ -23,6 +24,14 @@ export default function Layout({ children, currentPageName }) {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setShowBrakeLightNotice(false);
+    }, 4000);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   const isHomePage = currentPageName === "Home";
@@ -356,6 +365,27 @@ export default function Layout({ children, currentPageName }) {
 
       {/* Main Content */}
       <main className="pt-20">{children}</main>
+
+      {showBrakeLightNotice && (
+        <div className="fixed bottom-6 right-6 z-[60] max-w-sm rounded-xl border border-[var(--chrome-silver)] bg-[var(--deep-charcoal)]/95 p-3 text-sm text-white shadow-2xl backdrop-blur">
+          <button
+            type="button"
+            aria-label="Dismiss notification"
+            onClick={() => setShowBrakeLightNotice(false)}
+            className="absolute right-2 top-2 rounded p-1 text-gray-300 transition-colors duration-200 hover:text-white"
+          >
+            <X className="h-4 w-4" />
+          </button>
+          <Link
+            to={createPageUrl("BrakeAndLightsInspection")}
+            onClick={() => setShowBrakeLightNotice(false)}
+            className="block pr-6 transition-all duration-300 hover:scale-[1.01] hover:text-[var(--chrome-silver)]"
+          >
+            Chase Auto Body is now offering Certified Brake and Light Inspections.
+            <span className="ml-1 font-semibold underline">Schedule your Inspection Now.</span>
+          </Link>
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="bg-[var(--deep-charcoal)] border-t border-white border-opacity-10 py-12 relative overflow-hidden">

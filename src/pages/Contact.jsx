@@ -391,6 +391,9 @@ export default function Contact() {
                           <SelectItem value="frame_repair" className="text-white hover:bg-[#3A3A3A] focus:bg-[#3A3A3A] cursor-pointer">
                             Frame Repair
                           </SelectItem>
+                          <SelectItem value="brake_and_lights" className="text-white hover:bg-[#3A3A3A] focus:bg-[#3A3A3A] cursor-pointer">
+                            Brake and Lights
+                          </SelectItem>
                           <SelectItem value="general_inquiry" className="text-white hover:bg-[#3A3A3A] focus:bg-[#3A3A3A] cursor-pointer">
                             General Inquiry
                           </SelectItem>
