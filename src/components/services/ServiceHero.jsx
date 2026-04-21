@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ServiceHero({ title, subtitle, image, darken = false }) {
+export default function ServiceHero({ title, subtitle, image, darken = false, children }) {
   return (
     <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
       <div 
@@ -20,6 +20,7 @@ export default function ServiceHero({ title, subtitle, image, darken = false }) 
         <p className="text-xl md:text-2xl text-gray-300 font-light">
           {subtitle}
         </p>
+        {children}
       </div>
     </div>
   );

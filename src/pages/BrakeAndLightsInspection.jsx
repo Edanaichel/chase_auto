@@ -90,7 +90,15 @@ export default function BrakeAndLightsInspection() {
         subtitle="Certified brake and lamp inspections with a clean, professional process"
         image="https://i.imgur.com/C9s9bex.jpeg"
         darken={true}
-      />
+      >
+        <div className="mt-10 flex justify-center">
+          <Link to={createPageUrl("Contact")}>
+            <Button size="lg" className="bg-[#BEBEBE] text-black hover:bg-white text-lg px-10 py-7 glow-button">
+              Schedule Inspection
+            </Button>
+          </Link>
+        </div>
+      </ServiceHero>
 
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -173,42 +181,30 @@ export default function BrakeAndLightsInspection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-stretch">
-            <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-[#1A1A1A] to-black p-10">
-              <h3 className="text-3xl font-bold text-white mb-6">
-                Why Customers Trust Chase Auto Body
-              </h3>
-              <div className="space-y-6">
-                {reasonsToChooseUs.map((item, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#BEBEBE]/10 border border-[#BEBEBE]/30 flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-[#BEBEBE]" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-white mb-2">{item.title}</h4>
-                      <p className="text-gray-400 leading-relaxed">{item.description}</p>
-                    </div>
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-[#1A1A1A] to-black p-10 max-w-4xl">
+            <h3 className="text-3xl font-bold text-white mb-6">
+              Why Customers Trust Chase Auto Body
+            </h3>
+            <div className="space-y-6">
+              {reasonsToChooseUs.map((item, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#BEBEBE]/10 border border-[#BEBEBE]/30 flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-[#BEBEBE]" />
                   </div>
-                ))}
-              </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{item.title}</h4>
+                    <p className="text-gray-400 leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-
-            <div className="rounded-3xl border border-[#BEBEBE]/20 bg-[#BEBEBE]/5 p-10 flex flex-col justify-center">
-              <div className="text-[#BEBEBE] text-sm font-semibold tracking-[0.2em] uppercase mb-4">
-                Certified. Clear. Professional.
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-5">
-                Need a Brake and Lights Inspection?
-              </h3>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Reach out to schedule your inspection and get straightforward guidance from a certified team that values presentation, precision, and safety.
-              </p>
-              <Link to={createPageUrl("Contact")}>
-                <Button size="lg" className="w-full bg-[#BEBEBE] text-black hover:bg-white text-lg px-10 py-7">
-                  Schedule Inspection
-                </Button>
-              </Link>
-            </div>
+            <p className="mt-8 text-gray-500 text-sm">
+              Questions? Call{" "}
+              <a href="tel:+18188132999" className="text-[#BEBEBE] hover:text-white transition-colors">
+                (818) 813-2999
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
