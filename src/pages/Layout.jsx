@@ -29,7 +29,7 @@ export default function Layout({ children, currentPageName }) {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       setShowBrakeLightNotice(false);
-    }, 4000);
+    }, 300000);
 
     return () => window.clearTimeout(timer);
   }, []);
