@@ -8,8 +8,8 @@ import { createPageUrl } from "@/utils";
 
 const inspectionHighlights = [
   {
-    title: "Certified Brake & Lamp Inspections",
-    description: "Our team is certified to perform official brake and lights inspections with accuracy, professionalism, and clear documentation.",
+    title: "Certified VSSI/ Brake and Lights Inspections",
+    description: "Our team is certified to perform official VSSI/ Brake and Lights inspections with accuracy, professionalism, and clear documentation.",
   },
   {
     title: "Detailed Safety Evaluation",
@@ -21,7 +21,7 @@ const inspectionHighlights = [
   },
   {
     title: "Inspection Documentation",
-    description: "You receive the proper paperwork and reporting needed when an official brake and lamp inspection is required.",
+    description: "You receive the proper paperwork and reporting needed when an official VSSI/ Brake and Lights inspection is required.",
   },
 ];
 
@@ -86,8 +86,8 @@ export default function BrakeAndLightsInspection() {
   return (
     <div>
       <ServiceHero
-        title="Brake and Lights"
-        subtitle="Certified brake and lamp inspections with a clean, professional process"
+        title="VSSI/ Brake and Lights"
+        subtitle="Vehicle Safety Systems Inspection (VSSI) with a clean, professional process"
         image="https://i.imgur.com/C9s9bex.jpeg"
         darken={true}
       >
@@ -106,16 +106,16 @@ export default function BrakeAndLightsInspection() {
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-[#BEBEBE]/30 bg-[#BEBEBE]/10 px-5 py-2 text-sm font-semibold text-[#BEBEBE] mb-6">
                 <BadgeCheck className="w-4 h-4" />
-                Certified Brake & Lamp Inspection Service
+                Certified VSSI/ Brake and Lights
               </div>
               <h2 className="text-4xl font-bold text-white mb-6">
-                A Refined Inspection Experience Built Around Safety
+                Certified VSSI/ Brake and Lights
               </h2>
               <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  When a brake and lights inspection is required, you want a shop that is
+                  When a Vehicle Safety Systems Inspection or VSSI/ Brake and Lights is required, you want a shop that is
                   experienced, organized, and trusted. Chase Auto Body provides certified
-                  brake and lamp inspections with a process designed to feel smooth from
+                  VSSI/ Brake and Lights inspections with a process designed to feel smooth from
                   drop-off to final paperwork.
                 </p>
                 <p>

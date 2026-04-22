@@ -392,7 +392,7 @@ export default function Contact() {
                             Frame Repair
                           </SelectItem>
                           <SelectItem value="brake_and_lights" className="text-white hover:bg-[#3A3A3A] focus:bg-[#3A3A3A] cursor-pointer">
-                            Brake and Lights
+                            VSSI/ Brake and Lights
                           </SelectItem>
                           <SelectItem value="general_inquiry" className="text-white hover:bg-[#3A3A3A] focus:bg-[#3A3A3A] cursor-pointer">
                             General Inquiry

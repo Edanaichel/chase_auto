@@ -34,8 +34,8 @@ const services = [
   },
   {
     icon: BadgeCheck,
-    title: "Brake and Lights",
-    description: "Certified brake and lamp inspections with clear documentation and a streamlined process.",
+    title: "VSSI/ Brake and Lights",
+    description: "Certified VSSI/ Brake and Lights inspections with clear documentation and a streamlined process.",
     url: createPageUrl("BrakeAndLightsInspection"),
     gradient: "from-amber-500/20 via-yellow-500/20 to-lime-500/20",
     image: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2070&auto=format&fit=crop",

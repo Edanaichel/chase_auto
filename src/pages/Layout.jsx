@@ -44,7 +44,7 @@ export default function Layout({ children, currentPageName }) {
         { name: "Insurance Claim Assistance", url: createPageUrl("InsuranceClaimAssistance") },
         { name: "Collision Repair", url: createPageUrl("CollisionRepairDetail") },
         { name: "Frame Straightening", url: createPageUrl("AutoFrameStraightening") },
-        { name: "Brake and Lights", url: createPageUrl("BrakeAndLightsInspection") },
+        { name: "VSSI/ Brake and Lights", url: createPageUrl("BrakeAndLightsInspection") },
         { name: "Paint Repair", url: createPageUrl("AutoPaintRepair") },
       ],
     },
@@ -381,7 +381,7 @@ export default function Layout({ children, currentPageName }) {
             onClick={() => setShowBrakeLightNotice(false)}
             className="block pr-6 transition-all duration-300 hover:scale-[1.01] hover:text-[var(--chrome-silver)]"
           >
-            Chase Auto Body is now offering Certified Brake and Light Inspections.
+            Chase Auto Body is now offering Certified VSSI/ Brake and Lights.
             <span className="ml-1 font-semibold underline">Schedule your Inspection Now.</span>
           </Link>
         </div>
